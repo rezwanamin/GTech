@@ -14,15 +14,30 @@
         * {
             font-family: 'Poppins', sans-serif;
         }
+
+        .feedback-icon {
+            height: 20px;
+            width: 20px;
+        }
+
+        .feedback-left-button {
+            position: absolute;
+            left: -16px;
+        }
+
+        .feedback-right-button {
+            position: absolute;
+            right: -16px;
+        }
     </style>
 </head>
 
 <body>
     <!-- --------------------- Nav Bar Start----------------------- -->
-    <nav class="container">
-        <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="container px-0 py-4">
+        <nav class="navbar navbar-expand-lg bg-transparent">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand fs-2" href="#">GTech</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -30,24 +45,25 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
+                        <li class="nav-item mx-3">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mx-3">
                             <a class="nav-link" href="#">Courses</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item mx-3">
                             <a class="nav-link" href="#">Deals</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Success</a>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link">Success</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">About</a>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link">About</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <button class="btn btn-outline-success" type="submit">Register</button>
+                        <button class="btn bg-transparent px-4 fw-semibold text-info border border-info rounded-1"
+                            type="button" data-bs-toggle="modal" data-bs-target="#modalSignin">Register Now</button>
                     </form>
                 </div>
             </div>
@@ -279,10 +295,321 @@
     <!-- --------------------- Ready To Join End----------------------- -->
 
     <!-- --------------------- Student section start------- -->
-    <section class="container">
-
+    <section class="container py-5">
+        <div class="row my-4">
+            <h1 class="section-title">Meet Our Successful <br>Students</h1>
+            <p class="text-muted my-2">
+                It is a long established fact that a reader will be distracted <br> by the readable content of a page
+                when
+                looking at its layout.
+            </p>
+        </div>
+        <div class="row mb-4">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="images/student/student-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ashadullah</h5>
+                        <p class="card-text text-muted text-muted">UX/UI Designer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="images/student/student-2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ashadullah</h5>
+                        <p class="card-text text-muted text-muted">UX/UI Designer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="images/student/student-3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ashadullah</h5>
+                        <p class="card-text text-muted text-muted">UX/UI Designer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="images/student/student-4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ashadullah</h5>
+                        <p class="card-text text-muted text-muted">UX/UI Designer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row py-3">
+            <div class="col-12 d-flex justify-content-center">
+                <button:button class="btn btn-info px-4 text-white rounded-1 fs-5">View All</button:button>
+            </div>
+        </div>
     </section>
     <!-- --------------------- Student section end------- -->
+
+    <!-- --------------------- Student Feedback Start------- -->
+    <section class="container my-5 py-5">
+        <h1 class="section-title text-center">Some Students Feedback</h1>
+        <p class="text-muted text-center">IIt is a long established fact that a reader will be distracted by the
+            readable <br>
+            content of a page when looking at its layout.</p>
+
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- Item 1 -->
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="row m-0">
+                        <div class="col-12 col-lg-6 p-1">
+                            <div class="border border-muted p-4">
+                                <div class="row justify-content-between">
+                                    <div class="col-2">
+                                        <img src="images/comma.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-4 text-danger d-flex align-items-center justify-content-end">
+                                        <i class="mx-1 bi bi-star-fill"></i>
+                                        <i class="mx-1 bi bi-star-fill"></i>
+                                        <i class="mx-1 bi bi-star-fill"></i>
+                                        <i class="mx-1 bi bi-star-fill"></i>
+                                        <i class="mx-1 bi bi-star"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p class="my-4">There are many variations of passages of Lorem Ipsum available, but
+                                        the
+                                        majority have
+                                        suffered alteration in some form, by injected humour, or randomised words which
+                                        don't
+                                        look even slightly believable. If you are going to use a passage of Lorem.</p>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-1">
+                                        <img src="images/student/student-5.png" alt="">
+                                    </div>
+                                    <div class="col-11">
+                                        <h5 class="my-0 ms-2">Awlad Hossain</h5>
+                                        <p class="text-muted my-0 ms-2">UI Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 p-1">
+                            <div class="border border-muted p-4">
+                                <div class="row justify-content-between">
+                                    <div class="col-2">
+                                        <img src="images/comma.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-4 text-danger d-flex align-items-center justify-content-end">
+                                        <i class="mx-1 bi bi-star-fill"></i>
+                                        <i class="mx-1 bi bi-star-fill"></i>
+                                        <i class="mx-1 bi bi-star-fill"></i>
+                                        <i class="mx-1 bi bi-star-fill"></i>
+                                        <i class="mx-1 bi bi-star"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p class="my-4">There are many variations of passages of Lorem Ipsum available, but
+                                        the
+                                        majority have
+                                        suffered alteration in some form, by injected humour, or randomised words which
+                                        don't
+                                        look even slightly believable. If you are going to use a passage of Lorem.</p>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-1">
+                                        <img src="images/student/student-5.png" alt="">
+                                    </div>
+                                    <div class="col-11">
+                                        <h5 class="my-0 ms-2">Awlad Hossain</h5>
+                                        <p class="text-muted my-0 ms-2">UI Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Item 1 -->
+                <div class="carousel-item" data-bs-interval="10000">
+                    <div class="row m-0">
+                        <div class="col-12 col-lg-6 p-1">
+                            <div class="border border-muted p-4">
+                                <div class="row justify-content-between">
+                                    <div class="col-2">
+                                        <img src="images/comma.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-4 text-danger d-flex align-items-center justify-content-end">
+                                        <i class="mx-1 bi bi-star-fill"></i>
+                                        <i class="mx-1 bi bi-star-fill"></i>
+                                        <i class="mx-1 bi bi-star-fill"></i>
+                                        <i class="mx-1 bi bi-star-fill"></i>
+                                        <i class="mx-1 bi bi-star"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p class="my-4">There are many variations of passages of Lorem Ipsum available, but
+                                        the
+                                        majority have
+                                        suffered alteration in some form, by injected humour, or randomised words which
+                                        don't
+                                        look even slightly believable. If you are going to use a passage of Lorem.</p>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-1">
+                                        <img src="images/student/student-5.png" alt="">
+                                    </div>
+                                    <div class="col-11">
+                                        <h5 class="my-0 ms-2">Awlad Hossain</h5>
+                                        <p class="text-muted my-0 ms-2">UI Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 p-1">
+                            <div class="border border-muted p-4">
+                                <div class="row justify-content-between">
+                                    <div class="col-2">
+                                        <img src="images/comma.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-4 text-danger d-flex align-items-center justify-content-end">
+                                        <i class="mx-1 bi bi-star-fill"></i>
+                                        <i class="mx-1 bi bi-star-fill"></i>
+                                        <i class="mx-1 bi bi-star-fill"></i>
+                                        <i class="mx-1 bi bi-star-fill"></i>
+                                        <i class="mx-1 bi bi-star"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p class="my-4">There are many variations of passages of Lorem Ipsum available, but
+                                        the
+                                        majority have
+                                        suffered alteration in some form, by injected humour, or randomised words which
+                                        don't
+                                        look even slightly believable. If you are going to use a passage of Lorem.</p>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-1">
+                                        <img src="images/student/student-5.png" alt="">
+                                    </div>
+                                    <div class="col-11">
+                                        <h5 class="my-0 ms-2">Awlad Hossain</h5>
+                                        <p class="text-muted my-0 ms-2">UI Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Item 1 -->
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="row m-0">
+                        <div class="col-12 col-lg-6 p-1">
+                            <div class="border border-muted p-4">
+                                <div class="row justify-content-between">
+                                    <div class="col-2">
+                                        <img src="images/comma.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-4 text-danger d-flex align-items-center justify-content-end">
+                                        <i class="mx-1 bi bi-star-fill"></i>
+                                        <i class="mx-1 bi bi-star-fill"></i>
+                                        <i class="mx-1 bi bi-star-fill"></i>
+                                        <i class="mx-1 bi bi-star-fill"></i>
+                                        <i class="mx-1 bi bi-star"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p class="my-4">There are many variations of passages of Lorem Ipsum available, but
+                                        the
+                                        majority have
+                                        suffered alteration in some form, by injected humour, or randomised words which
+                                        don't
+                                        look even slightly believable. If you are going to use a passage of Lorem.</p>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-1">
+                                        <img src="images/student/student-5.png" alt="">
+                                    </div>
+                                    <div class="col-11">
+                                        <h5 class="my-0 ms-2">Awlad Hossain</h5>
+                                        <p class="text-muted my-0 ms-2">UI Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 p-1">
+                            <div class="border border-muted p-4">
+                                <div class="row justify-content-between">
+                                    <div class="col-2">
+                                        <img src="images/comma.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-4 text-danger d-flex align-items-center justify-content-end">
+                                        <i class="mx-1 bi bi-star-fill"></i>
+                                        <i class="mx-1 bi bi-star-fill"></i>
+                                        <i class="mx-1 bi bi-star-fill"></i>
+                                        <i class="mx-1 bi bi-star-fill"></i>
+                                        <i class="mx-1 bi bi-star"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p class="my-4">There are many variations of passages of Lorem Ipsum available, but
+                                        the
+                                        majority have
+                                        suffered alteration in some form, by injected humour, or randomised words which
+                                        don't
+                                        look even slightly believable. If you are going to use a passage of Lorem.</p>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-1">
+                                        <img src="images/student/student-5.png" alt="">
+                                    </div>
+                                    <div class="col-11">
+                                        <h5 class="my-0 ms-2">Awlad Hossain</h5>
+                                        <p class="text-muted my-0 ms-2">UI Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="d-none d-lg-block">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <div
+                        class="feedback-left-button bg-info rounded-circle p-2 d-flex justify-content-center align-items-center">
+                        <span class="feedback-icon carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </div>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <div
+                        class="feedback-right-button bg-info rounded-circle p-2 d-flex justify-content-center align-items-center">
+                        <span class="feedback-icon carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+
+
+
+
+    </section>
+    <!-- --------------------- Student Feedback Start------- -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
